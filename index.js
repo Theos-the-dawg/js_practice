@@ -18,15 +18,16 @@
  const values = [1,2,3,4,5,6,7,7,7,8,9,10];
  for(let index=0;index<values.length;index++){
      const indexes = values[index];
-     console.log(indexes)
+    // console.log(indexes)
      if(indexes === 7 ){
-        const count_7 = [index];
+        const count_7 = values[index];
+        console.log(count_7);
  }
 }
-values.forEach(element => {
+// values.forEach(element => {
     
-});
-console.log(values);
+// });
+// console.log(values);
 
 const ages = [15,20,30,15,15];
 
