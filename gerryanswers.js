@@ -21,12 +21,13 @@ function character(age){
     const person = {
         "name":"John",
         "surname":"watford",
+        "age":age,
         "contact":{
             "email":"john@email.com",
             "phone":"0712345678"
         },
-        "age":age
     }
+    return person;
 
     if(person.age > 65){
         console.log("Senior!")
@@ -45,5 +46,12 @@ character(13);
 
 
 // 3. 2.2)Create a function that will loop through every value in a object via only the name key in your nested array.
+function showPerson(){
+    for(let key in person){
+        console.log(person[name]);
+    }
+}
+const person = character(23);
+showPerson(person);
 
 
