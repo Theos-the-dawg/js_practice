@@ -17,12 +17,12 @@
 
  const values = [1,2,3,4,5,6,7,7,7,8,9,10];
  for(let index=0;index<values.length;index++){
-     const indexes = values[index];
+     const indexes = values[index]+1;
     // console.log(indexes)
-     if(indexes === 7 ){
-        const count_7 = values[index];
-        console.log(count_7);
- }
+//      if(indexes === 7 ){
+//         const count_7 = values[index];
+//         console.log(count_7);
+//  }
 }
 // values.forEach(element => {
     
