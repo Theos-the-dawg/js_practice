@@ -12,7 +12,7 @@ function FirstAndLastIndex(arr){
     }
 }
 const fruits = ["apple","banana","cherry","date","mango"];
-//FirstAndLastIndex(fruits)
+FirstAndLastIndex(fruits)
 
 
 // 2. 2.1)Create a nested object that is linked to a person's user data eg name email and surname etc.  if that user is older than 65 log that they are senior if they are 64-19 log mid life and if under 18 a minor
@@ -21,18 +21,17 @@ function character(age){
     const person = {
         "name":"John",
         "surname":"watford",
-        "age":age,
         "contact":{
             "email":"john@email.com",
             "phone":"0712345678"
         },
-    }
-    return person;
+        "age":age,
+    };
 
-    if(person.age > 65){
+    if( person.age === 65 || person.age > 65){
         console.log("Senior!")
     }
-    else if(person.age >= 19 && person.age < 64)
+    else if(person.age >= 19 || person.age < 64)
         {
         console.log("Middle aged!")
     }
@@ -40,18 +39,18 @@ function character(age){
         console.log("Minor!")
     }
 }
-character(13);
+character(97);
 
 
 
 
-// 3. 2.2)Create a function that will loop through every value in a object via only the name key in your nested array.
-function showPerson(){
-    for(let key in person){
-        console.log(person[name]);
-    }
-}
-const person = character(23);
-showPerson(person);
+// // 3. 2.2)Create a function that will loop through every value in a object via only the name key in your nested array.
+// function showPerson(){
+//     for(let key in person){
+//         console.log(person[name]);
+//     }
+// }
+// const person = character(23);
+// //showPerson(person);
 
 
