@@ -50,18 +50,19 @@ for(let i=0;i<text.length;i++){
     for(let index= 0; index<vowels.length;index++){
         let value = vowels[index];
         if(element === value){
-            console.log(value);
-           console.log(counted_vowels.push(value));
+            //console.log(value);
+           counted_vowels.push(value);
+           console.log(counted_vowels)
         }
     }
 }
 
 }
-//VowelCounter('Hi Mattt')
+VowelCounter('Hi Mattt')
 
 function findmax(array){
 console.log(array);
 console.log( array = array.sort((a, b) => a - b)); 
 console.log(array.at(-1));
 }
-findmax([10,5,3,45,89])
+//findmax([10,5,3,45,89])
