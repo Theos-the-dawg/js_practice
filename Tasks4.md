@@ -61,6 +61,7 @@ Formula:
 
 ```
 F = (C × 9/5) + 32
+F = (C x 1.8) + 32
 ```
 
 Convert:
