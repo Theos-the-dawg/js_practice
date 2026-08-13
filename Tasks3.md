@@ -1,10 +1,10 @@
- The Classic FizzBuzz
+The Classic FizzBuzz
 
 * **Task:** Loop through numbers from 1 to 50. [[1](https://www.reddit.com/r/ADHD_Programmers/comments/1cog4e4/beginner_friendly_exercises_for_practicing/), [2](https://www.studocu.com/en-za/document/university-of-johannesburg/development-software-1a/loop-and-conditional-exercises-javascript-practice/163404230)]
 * **Condition:**
 
   * **If a number is divisible by 3, print "Fizz".**
-  * **If a number is divisible by 5, print "Buzz".**
+  * **If a number is divisible by 5, print "Buzz".
   * **If it is divisible by both 3 and 5, print "FizzBuzz".**
   * **Otherwise, just print the number.**
 
