@@ -16,4 +16,3 @@ Grade Predictor
 * **Task:** Given an array of mixed positive and negative numbers (e.g., `[10, -5, 23, -2, 0, 14, -8]`), iterate through it.
 * **Condition:** Check if the number is greater than zero.
 * **Output:** Calculate and print the final sum of **only** the positive numbers.
-                              
