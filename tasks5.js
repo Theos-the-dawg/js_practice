@@ -33,7 +33,7 @@ isActive()
 // * **Task:** Given an array of product objects with `item` (string) and `quantity` (number) properties, write a loop to evaluate the stock level. Use if/else statements to count how many items are "In Stock" (quantity greater than 0) versus "Out of Stock" (quantity equal to 0). Return an object with the totals: `{ inStockCount: X, outOfStockCount: Y }`.
 // * **Example Input:** `[{item: "Pen", quantity: 5}, {item: "Notebook", quantity: 0}, {item: "Pencil", quantity: 2}]`
 //const products = [{item: "Pen", quantity: 5}, {item: "Notebook", quantity: 0}, {item: "Pencil", quantity: 2}]
-function checkStock(products) {
+function checkStock(products){
     let inStockCount = 0;
     let outOfStockCount = 0;
 
