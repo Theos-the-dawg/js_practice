@@ -1,5 +1,3 @@
-
-
 Question 1
 
 Find Minimum in Array
@@ -20,7 +18,6 @@ Write a JavaScript function to convert an amount into coins.
 Here 46 is the amount. and 25, 10, 5, 2, 1 are coins.
 
 *Output* : 25, 10, 10, 1
-
 
 Question 3
 
