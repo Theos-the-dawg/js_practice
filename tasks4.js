@@ -21,7 +21,7 @@
 
 
 // //Excercise 3
-const celcius
+//const celcius
 // let celsius = 30;
 // F = (celsius*1.8) + 32
 // console.log(celsius)
