@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT BATTLE</title>
+        <style>
+            body {
+                font-family: Arial;
+                text-align: center;
+                background: #111;
+                color: white;
+            }
+            #enemy {
+                font-size: 100px;
+                margin: 40px;
+            }
+            #message {
+                font-size: 25px;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JAVASCRIPT BATTLE</h1>
+        <div id="enemy">😈</div>
+        <h2>Enemy Health:<span id="health">100</span></h2>
+
+        <h2>Score: <span id="score">0</span></h2>
+        <button onclick="shoot()">SHOOT</button>
+        <div id="message">The enemy is waiting...</div>
+        <script>
+            //Game variables
+            let enemyHealth = 100;
+            let score = 0;
+
+            function updateDisplay() {//Syncs current health and score variables to the HTML interface.
+                //built-in property used to get or set the raw text inside the html element and all of its descendants
+                document.getElementById("health").textContent = enemyHealth;
+                document.getElementById("score").textContent = score;
+            }
+
+            function newEnemy() {
+                enemyHealth = 100;
+                document.getElementById("enemy").textContent = "😈";
+                document.getElementById("message").textContent = "The enemy is waiting...";
+                updateDisplay();
+            }
+
+            function shoot() {
+                //damage enemy
+                let damage = 20;
+
+                if (enemyHealth > 0) {
+                    enemyHealth = enemyHealth - damage;
+                    document.getElementById("enemy").textContent = "💥";
+                    document.getElementById("message").textContent = "Boom! You hit the enemy!";
+
+                    if (enemyHealth <= 0) {
+                        score = score + 10;
+                        document.getElementById("message").textContent = "Enemy defeated!";
+                        updateDisplay();
+                        setTimeout(newEnemy, 1000);
+                        return;
+                    }
+
+                    updateDisplay();
+                }
+            }
+        </script>
+    </body>
