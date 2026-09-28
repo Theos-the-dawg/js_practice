@@ -23,7 +23,6 @@ const names = [
 for(let i = 0;i<names.length;i++){
     const element = names[i]
     if(element.isActive ===true)
-        {console.log}
     console.log(element)
 }
 }
